@@ -28,7 +28,7 @@ execTest = (cb)->
 
 
 execGitCommit = (cb)->
-	puts = (error, stdout, stderr)->
+	puts = (error, stdout, stderr)=>
 		if error then @cb(error, null)
 		sys.puts(stdout) 
 		cb('null', stdout);
