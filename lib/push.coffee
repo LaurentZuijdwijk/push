@@ -3,7 +3,9 @@ exec = require('child_process').exec
 color = require('colors')
 async = require('async')
 
-options = {}
+options = {
+	m:''
+}
 
 processArgs = (cb)->
 	process.argv.forEach( (val, index, array)=> 
