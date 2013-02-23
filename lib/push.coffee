@@ -44,7 +44,7 @@ execGitCommit = (cb)->
 			# cb(new Error('error'))
 			if chunk is '\n' 
 				process.stdin.pause()
-				execGitCommit(@cb)
+				execGitCommit(cb)
 			else
 				options.m += chunk
 
