@@ -27,11 +27,11 @@ execTest = (cb)->
 	exec('testacular run', puts)
 
 
-execGitCommit = (@cb)->
+execGitCommit = (cb)->
 	puts = (error, stdout, stderr)->
 		if error then @cb(error, null)
 		sys.puts(stdout) 
-		@cb('null', stdout);
+		cb('null', stdout);
 	if options.m 
 		cmd = "git commit -m '"+options.m+"'"
 		exec(cmd, puts)	
