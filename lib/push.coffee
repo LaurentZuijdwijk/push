@@ -62,7 +62,7 @@ cli.main (args, options) ->
 		async.apply(execGit,"git status"),
 		async.apply(require('./commit')),
 		async.apply(execGit,"git status"),
-		async.apply(execGit,"git push"),
+		async.apply(execGit,"git push"), 
 		async.apply(getRevision)
 	]
 
