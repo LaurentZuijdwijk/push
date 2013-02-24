@@ -9,7 +9,7 @@ cli = require('cli')
 
 cli.parse({
     m:   ['m', ''],
-    init:  ['init', 'false'],
+    init:  ['init', 'false'], 
     serve: [false, 'Serve static files from PATH', 'path', './public']
 });
 

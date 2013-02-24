@@ -1,5 +1,5 @@
 {
-    "name": "push",
+    "name": "commit",
     "description": "Some git automation",
     "main": "./lib/push",
     "author": "Laurent Zuijdwijk",
@@ -28,6 +28,6 @@
         "test": "nodeunit test/test-async.js"
     },
     "bin": {
-        "push":     "./bin/push.js"
+        "commit":     "./bin/commit.js"
     }
 }
