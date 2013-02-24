@@ -1,6 +1,7 @@
 options = {m:''}
 exec = require('child_process').exec
 sys = require('sys')
+color = require('colors')
 
 
 execGitCommit = (cb)->
