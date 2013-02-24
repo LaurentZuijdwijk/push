@@ -1,4 +1,8 @@
-module.exports = (cb)->
+options = {m:null}
+exec = require('child_process').exec
+
+
+execGitCommit = (cb)->
 	puts = (error, stdout, stderr)=>
 		if error then @cb(error, null)
 		sys.puts(stdout) 
@@ -20,3 +24,4 @@ module.exports = (cb)->
 				options.m += chunk
 		)
  
+module.exports = execGitCommit
