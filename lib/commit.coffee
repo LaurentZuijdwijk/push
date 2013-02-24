@@ -1,13 +1,13 @@
 options = {m:''}
 exec = require('child_process').exec
 sys = require('sys')
-color = require('colors')
 
 
 execGitCommit = (cb)->
 	puts = (error, stdout, stderr)=>
 		if error then @cb(error, null)
 		sys.puts(stdout) 
+
 		cb('null', stdout);
 	if options.m 
 		cmd = "git commit -m '"+options.m+"'"

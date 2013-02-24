@@ -54,9 +54,8 @@ cli.main (args, options) ->
 		cb(null)
 
 
-	async.series([
-		# async.apply(execTest),
-		async.apply(processArgs),
+	tasks = [
+
 		async.apply(execGit,"git pull"),
 
 		async.apply(execGit,"git add ."),
@@ -64,4 +63,7 @@ cli.main (args, options) ->
 		async.apply(require('./commit')),
 		async.apply(execGit,"git status"),
 		async.apply(getRevision)
-	])
+	]
+
+
+	async.series(tasks)
