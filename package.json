@@ -13,9 +13,10 @@
     },
     "dependencies": {
         "async": ">=0.2.5",
-        "colors": ">=0.6.0-1"
+        "colors": ">=0.6.0-1",
+        "cli": "0.4.4-2"
   },
-    "licenses" : [
+    "licenses" : [ 
         {
             "type" : "MIT",
             "url" : "http://github.com/caolan/async/raw/master/LICENSE"
