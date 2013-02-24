@@ -1,5 +1,6 @@
-options = {m:null}
+options = {m:''}
 exec = require('child_process').exec
+sys = require('sys')
 
 
 execGitCommit = (cb)->
