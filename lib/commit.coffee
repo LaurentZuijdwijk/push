@@ -10,7 +10,7 @@ execGitCommit = (cb)->
 
 		cb('null', stdout);
 	if options.m 
-		cmd = "git commit -m '"+options.m+"'"
+		cmd = "git commit -m '"+options.m+"'" 
 		exec(cmd, puts)	
 		console.log(String(cmd).green.bold.inverse);
 	else 

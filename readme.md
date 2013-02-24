@@ -8,6 +8,6 @@ On the roadmap:
 
 Usage:
 
-# push
+push
 
 The script will prompt you for a commit message.

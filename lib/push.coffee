@@ -66,4 +66,4 @@ cli.main (args, options) ->
 	]
 
 
-	async.series(tasks)
+	async.series(tasks) 
